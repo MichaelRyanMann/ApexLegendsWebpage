@@ -28,7 +28,7 @@ header{
 #nav-bar{
     position: absolute;
     text-align:center;
-    top:79%;
+    top:90%;
     left:0;
     background-color: black;
     width:100%;
@@ -183,21 +183,23 @@ nav a:hover {
 }
 
 .about-btn{
-    text-align: center;
-    border:2px solid black;
-    padding:2px 0;
-    margin-top:0;
+    text-align: center; 
+    border: 2px solid black;
     width:115px;
+    padding:2px 4px;
     margin: 0 auto 10px auto;
+  }
+
+  .about-btn a{
+    text-align: center;
     font-size:13px;
   }
 
-  .about-btn:hover{
-      border: 2px solid red;
+  .about-btn a:hover{
       color: red;
-      text-decoration: underline;
       cursor: pointer;
-  }
+      text-decoration: underline;
+  } 
 
 .footer-banner{
     width: 100%;
@@ -219,6 +221,7 @@ nav a:hover {
 
 
 /* legends.hmtl */
+
 .main-info-container{
     display:flex;
     width:90%;
@@ -283,15 +286,80 @@ hr{
     width:80%;
 }
 
+.ability-main{
+    display: flex;
+    background-color: black;
+    width:100%;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:50px 0 40px 0;
+}
 
-/*.about-btn{
+/*.ability-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 33.33%;
+} 
+
+.ability-text-flex{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+
+*/
+
+.ability-img{
+    width:400px;
+    height: auto;
+}
+
+.ability-text-flex{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 33.33%;
+}
+
+.ability-text-flex h4{
+    color:red;
+    font-weight: 600;
+}
+
+.ability-text-flex h3{
+    color:white;
+    font-weight: bolder;
+    font-size:20px;
+}
+.ability-text-flex p{
+    color:white;
+    font-size: 14px;
     text-align: center;
-    border:2px solid black;
-    padding:2px 0;
-    margin-top:0;
-    width:115px;
-    font-size:13px;
-  } */
+    width:70%;
+    margin-bottom:40px;
+    margin-top:10px;
+}
+
+.ability-text-flex h4,h3{
+    margin-top:5px;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
 
 
   .back-btn{

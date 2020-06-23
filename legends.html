@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="flex-menu">
-            <img id="nav-toggle" class="nav-toggle" src="images/ApexLogoPhotos/white-menu.png" alt="menu toggle" onclick="onClick()">
+            <img id="nav-toggle" class="nav-toggle" src="images/ApexLogoPhotos/white-menu.png" alt="menu toggle" onclick="menuClick()">
         </div>
         <div class="flex-logo">    
             <img class="logo-img" src="images/RyanLogos/easymoney.png" alt="Easy $ Development">
@@ -39,17 +39,17 @@
         <!--column 1-->
         <div class="col-img">
             <div class="poster-box">
-            <img class="poster-img" src="images/BangalorPhotos/apex-grid-tile-legends-bangalore.png.adapt.crop16x9.png" alt="Legend Headshot">
+            <img id="legend-headshot" class="poster-img" src="images/BangalorPhotos/apex-grid-tile-legends-bangalore.png.adapt.crop16x9.png" alt="Legend Headshot">
             </div>
         </div>
         <!--column 2-->
         <div class="col-txt column">
             <!--info flex box-->
             <div class="info-flex">
-                <p>"Name the weapon--I'll still beat you."</p>
-                <h1>Bangalore</h1>
-                <h3>Professional Soldier</h5>
-                <p class="legend-story">Born into a military family where she, her parents, and her four older brothers all served in the IMC Armed Forces, Bangalore has been an exceptional soldier since she was young. She was top of her class at the IMC Military Academy and the only cadet who could take apart a Peacekeeper, equip it with a Precision Choke hop-up, and put it back together in under twenty seconds – blindfolded.
+                <p id="legend-saying">"Name the weapon--I'll still beat you."</p>
+                <h1 id="name-header">Bangalore</h1>
+                <h3 id="title-header">Professional Soldier</h5>
+                <p id="legend-story "class="legend-story">Born into a military family where she, her parents, and her four older brothers all served in the IMC Armed Forces, Bangalore has been an exceptional soldier since she was young. She was top of her class at the IMC Military Academy and the only cadet who could take apart a Peacekeeper, equip it with a Precision Choke hop-up, and put it back together in under twenty seconds – blindfolded.
                    <!--In the months following the Battle at Gridiron, Anita and her brother Jackson had lost contact with what was left of the IMC fleet, and were ambushed by unknown assailants upon arrival in the Outlands. The squad scattered, but Jackson stayed behind to give his sister time to escape. Alone and with no way home, Anita put her training, extensive weapon knowledge, and competitive spirit to work by joining the Apex Games. Now, she fights to raise money for passage back to the IMC home base, where she hopes to reunite with what remains of her family.-->
                 </p>
             </div> 
@@ -96,7 +96,29 @@
         </div>
         
     </div>
-    <p class="back-btn"><a class="back-link" href="index.html#legend-container">Back to Legends</a></p>
+
+    <div class="ability-main">
+            <div class="ability-text-flex"> 
+                <img id="tact-img" class= "ability-img" src="images/BangalorPhotos/apex-grid-tile-legends-abilities-tactical-bangalore.png.adapt.crop16x9.652w.png" alt="Tactical Ability Icon">
+                <h4>Tactical Ability</h4>
+                <h3 id="tact-name">Smoke Launcher</h3>
+                <p id="tact-info">Fire a high-velocity smoke canister that explodes into a smoke wall on impact.</p>
+            </div>
+        
+            <div class="ability-text-flex"> 
+                <img id="pass-img" class= "ability-img"  src="images/BangalorPhotos/apex-grid-tile-legends-abilities-passive-bangalore.png.adapt.crop16x9.652w.png" alt="Passive Ability Icon">
+                <h4>Passive Ability</h4>
+                <h3 id="pass-name">Double Time</h3>
+                <p id="pass-info">Taking fire while sprinting makes you move faster for a brief time.</p>
+            </div>
+       
+            <div class="ability-text-flex"> 
+                <img id="ult-img" class= "ability-img" src="images/BangalorPhotos/apex-grid-tile-legends-abilities-ultimate-bangalore.png.adapt.crop16x9.652w.png" alt="Ultimate Ability Icon">
+                <h4>Ultimate Ability</h4>
+                <h3 id="ult-name">Rolling Thunder</h3>
+                <p id="ult-info">Call in an artillery strick that slowly creeps across the landscape.</p>
+            </div>
+    </div>
 
     <div id="contact" class= "footer-banner">
         <img src="images/BannerPhotos/apex-meet-legends-background.jpg" alt="red Apex background">
