@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legends Info Page</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://fonts.googleapis.com/css?family=Odibee Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Monda' rel='stylesheet'>
+    
+</head>
+<body>
+    <header>
+        <div class="flex-menu">
+            <img id="nav-toggle" class="nav-toggle" src="images/ApexLogoPhotos/white-menu.png" alt="menu toggle" onclick="onClick()">
+        </div>
+        <div class="flex-logo">    
+            <img class="logo-img" src="images/RyanLogos/easymoney.png" alt="Easy $ Development">
+        </div>
+        <!--<div class="flex-menu">
+            <img class="nav-toggle red" src="images/ApexLogoPhotos/linked-in.png" alt="red linked-in icon">
+        </div>-->
+        <nav id="nav-bar">
+          <ul>
+            <li class="top"><a href="index.html#banners">Home</a></li> 
+            <li><a href="index.html#banner-red-background">About</a></li> 
+            <li><a href="index.html#legend-container">Legends</a></li>
+            <li class="bottom"><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <div id="banners" class="banner-container">
+        <img id="legend-poster" class="banner-image" src="images/BangalorPhotos/poster.jpg.adapt.crop16x9.1455w.jpg" alt="Apex Legend Character Poster Image">
+    </div>
+    
+    <!--main content flexbox-->
+    <div class="main-info-container">
+        <!--column 1-->
+        <div class="col-img">
+            <div class="poster-box">
+            <img class="poster-img" src="images/BangalorPhotos/apex-grid-tile-legends-bangalore.png.adapt.crop16x9.png" alt="Legend Headshot">
+            </div>
+        </div>
+        <!--column 2-->
+        <div class="col-txt column">
+            <!--info flex box-->
+            <div class="info-flex">
+                <p>"Name the weapon--I'll still beat you."</p>
+                <h1>Bangalore</h1>
+                <h3>Professional Soldier</h5>
+                <p class="legend-story">Born into a military family where she, her parents, and her four older brothers all served in the IMC Armed Forces, Bangalore has been an exceptional soldier since she was young. She was top of her class at the IMC Military Academy and the only cadet who could take apart a Peacekeeper, equip it with a Precision Choke hop-up, and put it back together in under twenty seconds – blindfolded.
+                   <!--In the months following the Battle at Gridiron, Anita and her brother Jackson had lost contact with what was left of the IMC fleet, and were ambushed by unknown assailants upon arrival in the Outlands. The squad scattered, but Jackson stayed behind to give his sister time to escape. Alone and with no way home, Anita put her training, extensive weapon knowledge, and competitive spirit to work by joining the Apex Games. Now, she fights to raise money for passage back to the IMC home base, where she hopes to reunite with what remains of her family.-->
+                </p>
+            </div> 
+            
+            <!--table flex box-->
+            <div class="table-flex">
+                <!--table row flex box-->
+                <div class="table-row">
+                    <p class="table-label">Real Name</p>
+                    <p id="legend-name" class="table-cell">Anita Williams</p>
+                </div>
+                <hr>
+                <!--table row flex box-->
+                <div class="table-row">
+                    <p class="table-label">Age</p>
+                    <p id="legend-age" class="table-cell">38</p>
+                </div>
+                <hr>
+                <!--table row flex box-->
+                <div class="table-row">
+                    <p class="table-label">Home Planet</p>
+                    <p id="legend-planet" class="table-cell">Gridiron</p>
+                </div>
+                <hr>
+                <!--table row flex box-->
+                <div class="table-row">
+                    <p class="table-label">Tactical Ability</p>
+                    <p id="legend-tactical" class="table-cell">Smoke Launcher</p>
+                </div>
+                <hr>
+                <!--table row flex box-->
+                <div class="table-row">
+                    <p class="table-label">Passive Ability</p>
+                    <p id="legend-passive" class="table-cell">Double Time</p>
+                </div>
+                <hr>
+                <!--table row flex box-->
+                <div class="table-row">
+                    <p class="table-label">Ultimate Ability</p>
+                    <p id="legend-ultimate" class="table-cell">Rolling Thunder</p>
+                </div>
+                <hr>
+            </div>
+        </div>
+        
+    </div>
+    <p class="back-btn"><a class="back-link" href="index.html#legend-container">Back to Legends</a></p>
+
+    <div id="contact" class= "footer-banner">
+        <img src="images/BannerPhotos/apex-meet-legends-background.jpg" alt="red Apex background">
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
