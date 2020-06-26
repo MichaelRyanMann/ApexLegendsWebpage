@@ -15,6 +15,7 @@ header{
     display: flex;
 }
 
+
 .nav-toggle{
     width:40px;
     height:30px;
@@ -27,8 +28,8 @@ header{
 
 #nav-bar{
     position: absolute;
-    text-align:center;
-    top:90%;
+    text-align:left;
+    top:75%;
     left:0;
     background-color: black;
     width:100%;
@@ -39,11 +40,12 @@ nav ul{
     margin:0;
     padding:0;
     list-style: none;
+    margin-bottom:15px;
 }
 
 nav li{
     margin-bottom: .25em;
-    margin-left:2.1em;
+    margin-left:6%;
 
 }
 
@@ -51,9 +53,7 @@ nav li{
     margin-top:.25em;
 }
 
-.bottom{
-    margin-bottom:1em
-}
+
 
 nav a{
     color:white;
@@ -65,7 +65,6 @@ nav a{
 
 nav a:hover {
     color:red;
-    border:1px solid red;
 }
 
 .flex-logo{
@@ -89,7 +88,12 @@ nav a:hover {
 
 .banner-container{
     width: 100%;
-    background-color: black;
+    padding-top:85px;
+}
+
+.legend-container{
+    width: 100%;
+    display: none;
     padding-top:90px;
 }
 
@@ -178,27 +182,24 @@ nav a:hover {
   }
 
   .about-link{
-    text-decoration: none;
     color: black;
+    padding: 2px 8px;
+    font-size: 13px;
+    text-decoration: none;
+    border: 2px solid black;
 }
 
 .about-btn{
-    text-align: center; 
-    border: 2px solid black;
-    width:115px;
-    padding:2px 4px;
-    margin: 0 auto 10px auto;
-  }
-
-  .about-btn a{
     text-align: center;
-    font-size:13px;
+    padding: 2px 0;
+    width: 100%;
+    margin: 0 auto 0 auto;
   }
 
   .about-btn a:hover{
       color: red;
       cursor: pointer;
-      text-decoration: underline;
+      border: 2px solid red;
   } 
 
 .footer-banner{
@@ -293,27 +294,9 @@ hr{
     justify-content:center;
     align-items: center;
     flex-wrap: wrap;
-    padding:50px 0 40px 0;
+    padding:50px 0 30px 0;
 }
 
-/*.ability-flex{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 33.33%;
-} 
-
-.ability-text-flex{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width:100%;
-}
-
-*/
 
 .ability-img{
     width:400px;
@@ -353,26 +336,27 @@ hr{
     margin-bottom: 0;
 }
 
-
-
-
-
-
-
-
-
+.hidden{
+    display: none;
+}
 
   .back-btn{
     text-align: center;
     padding:2px 0;
-    margin-top:0;
     width:150px;
-    margin: 0 auto 100px auto;
+    margin: 0 auto 0 auto;
   }
 
+.back-div{
+    background-color: black;
+    height: 120px;
+    padding-top: 20px;
+}
+
+
   .back-link{
-      color: black;
-      border: 2px solid black;
+      color: white;
+      border: 2px solid white;
       padding:3px 8px;
       font-size:16px;
       text-decoration: none;
@@ -380,7 +364,6 @@ hr{
   .back-link:hover{
       border: 2px solid red;
       color: red;
-      text-decoration: underline;
       cursor: pointer;
   }
 
@@ -399,6 +382,9 @@ hr{
 
     .legend-story{
         padding-right:0px;
+    }
+    nav li{
+        margin-left:5.5%;
     }
 }
 
@@ -420,9 +406,15 @@ hr{
 
     }
     .nav-toggle{
-        height:20px;
+        height:25px;
         width: 30px;
         margin-left:10px;
+    }
+    nav a{
+        font-size:13px;
+    }
+    nav li{
+        margin-left:3.8%;
     }
 }
 
@@ -466,6 +458,9 @@ hr{
     .gallery-item .thumbnail {
         width: 500px;
       }
+      nav li{
+        margin-left:5%;
+    }
     
 }
 
@@ -490,6 +485,7 @@ hr{
     .legend-title{
         font-size: 100%;
       }
+     
     
 }
 
